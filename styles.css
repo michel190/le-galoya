@@ -280,3 +280,21 @@ body{background:var(--bg-d);color:var(--txt-d)}
 .hero-photo::before{background:
   radial-gradient(ellipse 75% 65% at 50% 48%,rgba(10,10,10,.5),rgba(10,10,10,.72)),
   linear-gradient(rgba(10,10,10,.2),rgba(10,10,10,.45))}
+
+/* En-tête : version téléphone (photo verticale, plus compacte) */
+@media(max-width:699px){
+  .hero.hero-photo{min-height:0}
+  .hero-bg{background-image:url(img/hero-assiette-mobile.webp);background-position:center 40%;inset:-6px}
+  .hero-photo::before{background:linear-gradient(rgba(10,10,10,.55),rgba(10,10,10,.5) 45%,rgba(10,10,10,.85))}
+  .hero-center{padding:64px 22px 56px}
+  .hero-photo h1{font-size:40px;line-height:1.08;margin:4px 0 12px}
+  .hero-sub{font-size:15.5px}
+  .hero-photo .ctas{flex-direction:column;align-items:stretch;width:100%;max-width:320px;gap:10px;margin:22px 0 14px}
+  .hero-photo .ctas .btn{justify-content:center}
+  .k-more{display:none}
+}
+@media(max-width:699px){
+  .hero-photo::before{background:linear-gradient(rgba(10,10,10,.6),rgba(10,10,10,.62) 50%,rgba(10,10,10,.88))}
+  .hero-sub,.hero-photo .rating{text-shadow:0 1px 10px rgba(0,0,0,.9)}
+  .hero-photo .btn-frame{background:rgba(10,10,10,.55);backdrop-filter:blur(2px)}
+}

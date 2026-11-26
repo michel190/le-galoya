@@ -11,7 +11,8 @@
 <meta name="theme-color" content="#f8f4f2">
 <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preload" href="img/hero-assiette.webp" as="image" fetchpriority="high">
+<link rel="preload" href="img/hero-assiette.webp" as="image" fetchpriority="high" media="(min-width:700px)">
+<link rel="preload" href="img/hero-assiette-mobile.webp" as="image" fetchpriority="high" media="(max-width:699px)">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,7 +35,7 @@
 <section class="hero hero-photo">
   <div class="hero-bg" role="img" aria-label="Assiette brunch salée du Galoya : pain complet, œufs, jambon et tomates"></div>
   <div class="wrap hero-center">
-    <p class="kicker">Bistronomie · Rooftop · Corniche Ouest</p>
+    <p class="kicker">Bistronomie · Rooftop<span class="k-more"> · Corniche Ouest</span></p>
     <span class="orn" aria-hidden="true"><svg viewBox="0 0 120 12"><path d="M0 6h44M76 6h44"/><path d="M48 6l4-4 4 4-4 4zM56 6l4-4 4 4-4 4zM64 6l4-4 4 4-4 4z"/></svg></span>
     <h1>Des saveurs d'ici et d'ailleurs</h1>
     <p class="hero-sub">Du petit-déjeuner au dîner, la cuisine de la cheffe avec vue sur la Corniche.</p>
