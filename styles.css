@@ -265,7 +265,7 @@ body{background:var(--bg-d);color:var(--txt-d)}
 
 /* ===== En-tête photo plein écran, texte centré ===== */
 .hero.hero-photo{position:relative;padding:0;min-height:clamp(440px,72vh,640px);display:flex;align-items:center;overflow:hidden;background:#0d0d0d}
-.hero-bg{position:absolute;inset:-12px;background:url(img/hero-plateau.webp) center 45%/cover no-repeat;transform:scale(1.03)}
+.hero-bg{position:absolute;inset:-12px;background:url(img/hero-assiette.webp) center 45%/cover no-repeat;transform:scale(1.03)}
 .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:
   radial-gradient(ellipse 80% 70% at 50% 50%,rgba(10,10,10,.45),rgba(10,10,10,.82)),
   linear-gradient(rgba(10,10,10,.35),rgba(10,10,10,.65))}
